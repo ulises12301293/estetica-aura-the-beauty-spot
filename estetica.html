@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura The Beauty Spot</title>
+    <style>
+        /* Estructura general y fuentes */
+        body {
+            font-family: 'Courier New', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e6d1;
+            color: #1f1e1c;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f0e6d1;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #1f1e1c;
+            margin: 0;
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #030202;
+            text-transform: uppercase;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9a9e;
+        }
+
+        /* Hero Section con imagen de fondo */
+        .hero {
+            background-image: url('https://www.facehaus.com.ar/images/bg1.jpg'); /* Añade aquí una imagen similar */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #030202;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero a {
+            background-color: #030202;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #f0e6d1;
+        }
+
+        /* Sección de servicios */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #030202;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .service-item {
+            display: inline-block;
+            width: 30%;
+            margin: 0 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            color: #666;
+        }
+
+        /* Sección de testimonios */
+        .testimonials {
+            padding: 60px 20px;
+            background-color: #f0e6d1;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #030202;
+        }
+
+        .testimonial-item {
+            width: 40%;
+            display: inline-block;
+            padding: 20px;
+            margin: 0 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Sección de contacto */
+        .contact {
+            background-color: #030202;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .contact a {
+            background-color: #030202;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact a:hover {
+            background-color: #ff7070;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .service-item, .testimonial-item {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Aura The Beauty Spot</h1>
+        <nav>
+            <a href="#services">Servicios</a>
+            <a href="#testimonials">Testimonios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Bienvenida a Aura The Beauty Spot</h2>
+        <a href="#contact">Agendar Turno</a>
+    </div>
+
+    <!-- Servicios Section -->
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-item">
+            <h3>Tratamientos Faciales</h3>
+            <img src="img-estetica/tratamientos-faciales.jpg" alt="Tratamientos Facialess">
+            <p>Renueva tu piel con los mejores tratamientos personalizados para cada tipo de piel.</p>
+        </div>
+        <div class="service-item">
+            <h3>Manicura y Pedicura</h3>
+            <img src="img-estetica/Manicura.jpg" alt="Manicura y Pedicura">
+            <p>Cuida tus manos y pies con técnicas de alta calidad y productos innovadores.</p>
+        </div>
+        <div class="service-item">
+            <h3>Masajes Relajantes</h3>
+            <img src="img-estetica/majaresre.jpg" alt="Masajes Relajantes">
+            <p>Relájate y revitaliza tu cuerpo con nuestros masajes terapéuticos.</p>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonios de Clientes</h2>
+        <div class="testimonial-item">
+            <p>“El mejor lugar para cuidar mi piel. Profesionalismo y atención impecable.”</p>
+            <strong>- Clara G.</strong>
+        </div>
+        <div class="testimonial-item">
+            <p>“Excelente servicio de masajes. Volveré sin duda alguna.”</p>
+            <strong>- Daniel M.</strong>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <a href="https://calendly.com/aurathebautyspot" target="_blank">Agendar Turno</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aura The Beauty Spot. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
